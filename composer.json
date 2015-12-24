@@ -1,0 +1,29 @@
+{
+	"name" : "sasedev/commons-twig-bundle",
+	"description" : "dfsld",
+	"version" : "1.0.0",
+	"require" : {
+		"php" : ">=5.5",
+		"symfony/config" : "~2.8|~3.0",
+		"symfony/dependency-injection" : "~2.8|~3.0",
+		"symfony/http-kernel" : "~2.8|~3.0",
+		"symfony/twig-bridge" : "~2.8|~3.0"
+	},
+	"license" : "MIT",
+	"keywords" : ["symfony2", "twig"],
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.0.x-dev"
+		}
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Sasedev\\Commons\\TwigBundle\\" : "src/Sasedev/Commons/TwigBundle"
+		}
+	},
+	"type" : "symfony-bundle",
+	"authors" : [ {
+		"name" : "Salah Abdelkader Seif Eddine",
+		"email" : "seif.salah@gmail.com"
+	} ]
+}
