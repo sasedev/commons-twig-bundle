@@ -1,7 +1,6 @@
 {
 	"name" : "sasedev/commons-twig-bundle",
-	"description" : "dfsld",
-	"version" : "1.0.0",
+	"description" : "Twig extension Bundle for Symfony2",
 	"require" : {
 		"php" : ">=5.5",
 		"symfony/config" : "~2.8|~3.0",
