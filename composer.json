@@ -9,7 +9,10 @@
 		"symfony/twig-bridge" : "~2.8|~3.0"
 	},
 	"license" : "MIT",
-	"keywords" : ["symfony2", "twig"],
+	"keywords" : [
+		"symfony2",
+		"twig"
+	],
 	"extra" : {
 		"branch-alias" : {
 			"dev-master" : "1.0.x-dev"
@@ -17,12 +20,13 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Sasedev\\Commons\\TwigBundle\\" : "src/Sasedev/Commons/TwigBundle"
+			"" : "src"
 		}
 	},
 	"type" : "symfony-bundle",
-	"authors" : [ {
-		"name" : "Salah Abdelkader Seif Eddine",
-		"email" : "seif.salah@gmail.com"
-	} ]
+	"authors" : [{
+			"name" : "Salah Abdelkader Seif Eddine",
+			"email" : "seif.salah@gmail.com"
+		}
+	]
 }

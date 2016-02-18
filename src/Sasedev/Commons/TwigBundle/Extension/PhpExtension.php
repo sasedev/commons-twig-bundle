@@ -19,10 +19,10 @@ class PhpExtension extends Twig_Extension
 	public function getFunctions()
 	{
 		$fonctions = array();
-		
-		$fonctions['CallPhp_*'] = new Twig_SimpleFunction('twigToPhp', array($this, 'iconFunction'), 
-			array('pre_escape' => 'html', 'is_safe' => array('html')));
-		
+
+		$fonctions['CallPhp_*'] = new \Twig_Function_Method($this, 'twigToPhp', array('pre_escape' => 'html', 'is_safe' => array('html')));
+
+
 		return $fonctions;
 	}
 
@@ -30,7 +30,7 @@ class PhpExtension extends Twig_Extension
 	{
 		$arg_list = func_get_args();
 		$function = array_shift($arg_list);
-		
+
 		return call_user_func_array($function, $arg_list);
 	}
 
