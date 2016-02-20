@@ -20,7 +20,7 @@ class PhpExtension extends Twig_Extension
 	{
 		$fonctions = array();
 
-		$fonctions['CallPhp_*'] = new Twig_SimpleFunction($this->getName(), array($this, 'twigToPhp'), array('pre_escape' => 'html', 'is_safe' => array('html')));
+		$fonctions['CallPhp_*'] = new Twig_SimpleFunction('CallPhp_*', array($this, 'twigToPhp'), array('pre_escape' => 'html', 'is_safe' => array('html')));
 
 		return $fonctions;
 	}
